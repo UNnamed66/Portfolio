@@ -14,20 +14,20 @@ $(document).ready(function(){
     });
 
     $('.owl-carousel').owlCarousel({
+        center: true,
+        items:2,
         loop:true,
-        margin:10,
-        nav:true,
+        margin:60,
+        autoplay:true,
+        autoplayTimeout:1500,
+        autoplayHoverPause:true,
         responsive:{
-            0:{
-                items:1
-            },
             600:{
-                items:3
-            },
-            1000:{
-                items:5
+                items:4
             }
         }
-    })
+    });
+
+    $("[data-fancybox]").fancybox();
 
 });
